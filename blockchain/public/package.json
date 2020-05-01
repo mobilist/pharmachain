@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "webpack",
-    "start": "webpack --watch"
+    "start": "webpack --watch",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "keywords": [],
   "author": "",
@@ -26,6 +28,8 @@
     "redux": "^3.5.2",
     "redux-logger": "^3.0.6",
     "redux-thunk": "^2.2.0",
-    "webpack": "^2.2.1"
-  }
+    "webpack": "^2.2.1",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
